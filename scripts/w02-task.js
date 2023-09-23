@@ -3,8 +3,9 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-
-
+let fullName = "Stuart Evans";
+let currentYear = 2023;
+let profilePicture = images/placeholder.png;
 
 
 /* Step 3 - Element Variables */
