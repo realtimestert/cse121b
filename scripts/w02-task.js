@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = "Stuart Evans";
 let currentYear = 2023;
-let profilePicture = images/placeholder.png;
+let profilePicture = images/meanddog.png;
 
 
 /* Step 3 - Element Variables */
