@@ -26,12 +26,20 @@ img_[0].setAttribute("title", `${profilePicture}`);
 
 
 /* Step 5 - Array */
-let Array = ["BBQ","Ribeye Steak","Cheese Pizza","Buttered Toast","Hibachi"]
+const favFood = ["BBQ","Ribeye Steak","Cheese Pizza","Buttered Toast","Hibachi"]
 let moreFood = "Bacon";
 
-let elements = Array.length;
-document.querySelector("#food").innerHTML = foodElement;
+let elements = favFood.length;
+//document.querySelector("#food").innerHTML = foodElement;
 
+foodElement.innerHTML += `<strong>${favFood}</strong>`;
+foodElement.innerHTML += `<br>${favFood}, ${moreFood}`;
+//foodElement.shift(-1);
+const firstElement = favFood.shift();
+foodElement.innerHTML += `<br>${favFood}`;
 
+const lastElement = favFood.pop();
+foodElement.innerHTML += `<br>${favFood}`;
 
-
+//favFood.splice(-1,1);
+//foodElement.innerHTML += `<br>${favFood}`;
