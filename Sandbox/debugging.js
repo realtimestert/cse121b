@@ -1,6 +1,5 @@
-const PI = 3.14;
-const radius = 3;
-let area = 0;
-area = radius * radius * pi;
-radius = 4;
-area = radius * radius * pi;
+const countries = ["Canada", "Chili", "Colombia", "Croatia", "Costa Rica"];
+
+
+
+const countriesLong = countries.filter( country => country.length >= 7);
