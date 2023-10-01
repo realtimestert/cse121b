@@ -35,18 +35,30 @@ const multiply = (number1, number2) => {
 
 //factor1, factor2, product, multiplyNumbers
 const multiplyNumbers = () => {
-    let factor1 = number(document.querySelector("#factor1").value);
-    let factor2 = number(document.querySelector("#factor2").value);
+    let factor1 = Number(document.querySelector("#factor1").value);
+    let factor2 = Number(document.querySelector("#factor2").value);
     document.querySelector("#product").value = multiply(factor1, factor2);
 }
 
 document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
+// dividend, divisor, divideNumbers, quotient
+const divide = (number1, number2) => {
+    return number1 / number2;
+}
 
+const divideNumbers = () => {
+    let dividend = Number(document.querySelector("#dividend").value);
+    let divisor = Number(document.querySelector("#divisor").value);
+    document.querySelector("#quotient").value = divide(dividend, divisor);
+}
+
+document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
 /* Decision Structure */
-
+const currentDate = new Date();
+const today = currentDate.getDate();
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
