@@ -58,17 +58,20 @@ document.querySelector("#divideNumbers").addEventListener("click", divideNumbers
 
 /* Decision Structure */
 const currentDate = new Date();
-const today = currentDate.getDate();
+const currentYear = currentDate.getFullYear();
+let year = currentYear;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
-let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+let numberArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+document.querySelector("#array").innerHTML = numberArray;
 /* Output Odds Only Array */
-
+document.querySelector("#odds").innerHTML = numberArray.filter(number => number % 2 === 1);
 /* Output Evens Only Array */
-
+document.querySelector("#evens").innerHTML = numberArray.filter(number => number % 2 === 0);
 /* Output Sum of Org. Array */
-
+document.querySelector("#sumOfArray").innerHTML = numberArray.reduce((sum, number) => sum + number);
 /* Output Multiplied by 2 Array */
-
+document.querySelector("#multiplied").innerHTML = numberArray.map(number => number *2);
 /* Output Sum of Multiplied by 2 Array */
+document.querySelector("#sumOfMultiplied").innerHTML = numberArray.map(number => number *2).reduce((sum, number) => sum + number);
