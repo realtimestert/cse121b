@@ -45,16 +45,16 @@ const sortBy = (temples) => {
     switch (filter_) {
         case "utah":
             console.log(filter_);
-            break;
+                break;
         case "notutah":
             console.log(filter_);
-            break;
+                break;
         case "older":
             console.log(filter_);
-            break;
+                break;
         case "all":
             console.log(filter_);
-            break;
+                break;
     }
 }
 
