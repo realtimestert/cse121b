@@ -1,11 +1,41 @@
+//Quote List for final project!
+
+const quoteElement = document.querySelector("#quoteBox");
 let quoteList = [];
-const button = document.querySelector("#button");
+
+const displayQuotes = (quotes) => {
+  quotes.forEach(quote => {
+    let article = document.createElement("article");
+    let quoteName = document.createElement("h3");
+    quoteName.textContent = quote.quoteName;
+    console.log(quoteName);
+  });
+};
+
+const getQuote = async () => {
+  let url = "https://favqs.com/api/qotd";
+  const response = await fetch(url);
+  if (response.ok) {
+    const quoteList = await response.json();
+    displayQuotes.map(quoteList);
+  };
+}
+
+let reset = ()=> {
+  quoteElement.innerHTML = ";"
+};
+
+//document.querySelector();
+getQuote();
+
+
+/*const button = document.querySelector("#button");
 const oldQuotes = document.querySelector("#writtenQuote");
 const url = "https://favqs.com/api/qotd";
 const urlList = "https://favqs.com/api/";
-let results = null;
+let results = null;*/
 
-async function getQuote(url) {
+/*async function getQuote(url) {
   const response = await fetch(url);
   if (response.ok) {
     const data = await response.json();
@@ -37,12 +67,13 @@ function doStuffList(data) {
     const html = `<li>${currentItem}</li`;
     quoteListElement.innerHTML += html;
   });
-}
+}*/
 
-getQuote(url);
+/*getQuote(url);
 console.log(results);
 
-getquoteList(urlList);
+getquoteList(urlList);*/
+
 /*button.addEventListener("click", () => {
   resizeTo();
   getQuote();
