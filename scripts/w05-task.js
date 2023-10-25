@@ -5,7 +5,7 @@ const templesElement = document.querySelector("#temples");
 let templeList = [];
 /* async displayTemples Function */
 const displayTemples = (temples) => {
-    temples.foreach(temple => {
+    temples.forEach(temple => {
         let article = document.createElement("article");
         let templeName = document.createElement("h3");
         templeName.textContent = temple.templeName;
@@ -25,6 +25,7 @@ const getTemples = async () => {
     const response = await fetch(url);
     if (response.ok){
         const templeList = await response.json();
+        
         displayTemples(templeList);
     };
 }
@@ -45,17 +46,17 @@ const sortBy = (temples) => {
         case "notutah":
             console.log(filter_);
                 break;
-        case "older":
+        /*case "older":
             console.log(filter_);
-                break;
+                break;*/
         case "all":
             console.log(filter_);
                 break;
     }
 }
 
-    getTemples();
+getTemples();
 
 /* Event Listener */
 
-    document.querySelector("#sortBy").addEventListener("change",() => sortBy(templeList));
+document.querySelector("#sortBy").addEventListener("change",() => sortBy(templeList));
