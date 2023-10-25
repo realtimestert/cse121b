@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times, serif';
+    font-size: 14px;   
+    width: 100%;
+}
+section{
+    background-color: aquamarine;
+    width: 95rem;
+    margin:auto;
+    text-align: center;
+    padding: 1rem;    
+}
+div > article{
+    background-color: burlywood;
+    margin: 5rem 34rem;   
+    padding: 2rem;
+    max-width: 28rem;
+    min-height: 20rem;
+    border:.2rem ridge burlywood ;
+}
+#catchedPokemon > h3{
+    text-align: left;
+    font-size: 2.5rem;
+    margin-left:1.5rem;    
+}
+#catchedPokemon > ul{
+    margin: auto;
+    background-color:burlywood;
+    max-width: auto;
+    padding: 2.5rem 1rem;    
+}
+
+  

@@ -1,5 +1,5 @@
 /* W05: Programming Tasks */
-
+//https://byui-cse.github.io/cse121b-ww-course/resources/temples.json
 /* Declare and initialize global variables */
 const templesElement = document.querySelector("#temples");
 let templeList = [];
@@ -17,11 +17,7 @@ const displayTemples = (temples) => {
         templesElement.appendChild(article);
     });
     
-
 };
-//for each temple in temples
-templesElement.appendChild(article);
-
 
 /* async getTemples Function using fetch()*/
 const getTemples = async () => {
@@ -30,13 +26,13 @@ const getTemples = async () => {
     if (response.ok){
         const templeList = await response.json();
         displayTemples(templeList);
-    }
-};
+    };
+}
 
 /* reset Function */
 let reset = ()=> {
     templesElement.innerHTML = "";
-}
+};
 
 /* sortBy Function */
 const sortBy = (temples) => {
@@ -58,8 +54,8 @@ const sortBy = (temples) => {
     }
 }
 
-getTemples();
+    getTemples();
 
 /* Event Listener */
 
-document.querySelector("#sortBy").addEventListener("change",() => sortBy(templeList));
+    document.querySelector("#sortBy").addEventListener("change",() => sortBy(templeList));

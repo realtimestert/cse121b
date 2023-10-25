@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Random Quote Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyect Javascript</title>
+    <link rel="stylesheet" href="project3.css">
+    <script src="project3.js" type="module" defer></script>
 </head>
-<body> 
-  <p id = "quotes"></p>
-  <button onclick = "newQuote()">New Quote</button>
-
-  <script src="project3.js"></script>
+<body>
+    <section id="head-section">
+        <h2>Input Pokemón name for catching it</h2>
+        <label for="inputText">Pokemon :</label>
+        <input id="inputText" type="text">
+        <button id="btn">Buscar </button>        
+        <div>
+            <article id="imgContainer"></article>
+        </div>        
+    </section>
+    <section id="catchedPokemon">
+        <h2>Jail</h2>
+        <ul></ul>
+    </section>
+    
+    
 </body>
 </html>
