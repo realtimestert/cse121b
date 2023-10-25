@@ -46,9 +46,9 @@ const sortBy = (temples) => {
         case "notutah":
             console.log(filter_);
                 break;
-        /*case "older":
+        case "older":
             console.log(filter_);
-                break;*/
+                break;
         case "all":
             console.log(filter_);
                 break;
