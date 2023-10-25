@@ -1,5 +1,5 @@
 /* W05: Programming Tasks */
-//https://byui-cse.github.io/cse121b-ww-course/resources/temples.json
+
 /* Declare and initialize global variables */
 const templesElement = document.querySelector("#temples");
 let templeList = [];
@@ -41,22 +41,23 @@ const sortBy = (temples) => {
     let filter_ = document.querySelector("#sortBy").value;
     switch (filter_) {
         case "utah":
-            console.log(filter_);
+            console.log(filter_, temples);
                 break;
         case "notutah":
-            console.log(filter_);
+            console.log(filter_, temples);
                 break;
         case "older":
-            console.log(filter_);
+            console.log(filter_, temples);
                 break;
         case "all":
-            console.log(filter_);
+            console.log(filter_, temples);
                 break;
     }
 }
 
-getTemples();
+
 
 /* Event Listener */
 
 document.querySelector("#sortBy").addEventListener("change",() => sortBy(templeList));
+getTemples();
